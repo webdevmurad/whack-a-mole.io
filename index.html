@@ -22,25 +22,50 @@
         <button class="style-button game-start">Начать игру</button>
     </div>
     
-    <!-- <h1>Ударить крота</h1>
+    <div class="game-content">
+        <div class="game-content__left">
+            <h2>Ударить крота</h2>
 
-    <h2>Твой счет:</h2>
-    <h2 id="score">0</h2>
+            <div class="game-content__score">
+                <h3>Твой счет:</h3>
+                <h3 id="score">0</h3>
+            </div>
 
-    <h2>Осталось секунд:</h2>
-    <h2 id="time-left">60</h2>
+            <div class="game-content__time">
+                <h3>Осталось секунд:</h3>
+                <h3 id="time-left">10</h3>
+            </div>
 
-    <div class="grid">
-        <div class="square" id="1"></div>
-        <div class="square" id="2"></div>
-        <div class="square" id="3"></div>
-        <div class="square" id="4"></div>
-        <div class="square" id="5"></div>
-        <div class="square" id="6"></div>
-        <div class="square" id="7"></div>
-        <div class="square" id="8"></div>
-        <div class="square" id="9"></div>
-    </div> -->
-    <!-- <script src="./script.js"></script> -->
+            <div class="grid">
+                <div class="square" id="1"><img src="./dirt.svg" alt="dirt"></div>
+                <div class="square" id="2"><img src="./dirt.svg" alt="dirt"></div>
+                <div class="square" id="3"><img src="./dirt.svg" alt="dirt"></div>
+                <div class="square" id="4"><img src="./dirt.svg" alt="dirt"></div>
+                <div class="square" id="5"><img src="./dirt.svg" alt="dirt"></div>
+                <div class="square" id="6"><img src="./dirt.svg" alt="dirt"></div>
+                <div class="square" id="7"><img src="./dirt.svg" alt="dirt"></div>
+                <div class="square" id="8"><img src="./dirt.svg" alt="dirt"></div>
+                <div class="square" id="9"><img src="./dirt.svg" alt="dirt"></div>
+            </div>
+        </div>
+        <div class="game-content__right">
+            <h2>Последний результат</h2>
+            <div class="game-record__table"></div>
+            <button class="style-button game-new">Новая игра</button>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal" aria-hidden="true" >
+        <div class="modal__wrap">
+            <div class="modal__window" role="dialog" aria-modal="true" >
+                <h2 class="modal__title">Запишите результат</h2>
+                <input class="modal__input" type="text">
+                <button class="style-button modal__button">Сохранить</button>
+                <img class="modal__close" src="./cancel.png" alt="cancel">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
